@@ -1,0 +1,115 @@
+header > nav {
+  background-color: #fdefd3;
+  border-bottom: 0.25rem solid #ed8606;
+}
+
+header > nav > .navbar-brand {
+  width: 30%;
+  max-width: 350px;
+  min-width: 190px;
+}
+
+#logo-header {
+  width: 25%;
+}
+
+#logo-title-header {
+  width: 75%;
+}
+
+.navbar-nav > li:first-of-type{
+  border-left: 2px solid #ffe2ad;
+}
+
+.navbar-nav > li{
+  padding: 0 0.6rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #feb229;
+  border-right: 2px solid #ffe2ad;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #444444;
+}
+
+.navbar-light .nav-item.active .nav-link, .navbar-light .nav-item:hover .nav-link {
+  color: #ed8606;
+}
+
+#carouselSlides {
+  padding-top: 60px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#news {
+  background-color: #fdefd3;
+}
+
+#news h2 {
+  color: #ed8606;
+}
+
+#principalsWordsModal p{
+  font-style: oblique;
+}
+
+.modal-title {
+  color: #ed8606;
+}
+
+#goalsModal li {
+  padding: 0.25rem;
+}
+
+#footer-top {
+  border-top: 0.25rem solid #ed8606;
+  background-color: #fdefd3;
+}
+
+footer .nav-link {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+footer .nav-link:hover {
+  background-color: #ffe2ad;
+  border-radius: 0.5rem;
+}
+
+#footer-bottom {
+  background-color: #c16e07;
+  color: #ffffff;
+}
+
+/*************************************************************/
+
+@media (min-width: 576px) { 
+  header > .navbar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) { 
+  header > .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) { 
+
+}
+
+/**************************************/
