@@ -32,8 +32,8 @@ header > nav > .navbar-brand {
   color: #ed8606;
 }
 
-#carouselSlides {
-  padding-top: 60px;
+.content-top, #carouselSlides {
+  margin-top: 80px;
 }
 
 #news .list-group-item {
@@ -52,6 +52,10 @@ header > nav > .navbar-brand {
 
 #news .list-group{
   max-height: 60vh;
+}
+
+#map-frame {
+  min-height: 350px;
 }
 
 #principalsWordsModal p{
@@ -87,6 +91,8 @@ footer .nav-link:hover {
   color: #ffffff;
 }
 
+
+
 /*************************************************************/
 
 @media (min-width: 576px) { 
@@ -112,6 +118,10 @@ footer .nav-link:hover {
 
   #news .list-group{
     max-height: 100vh;
+  }
+
+  .content-top {
+    margin-top: 125px;
   }
 }
 
