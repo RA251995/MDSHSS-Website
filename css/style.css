@@ -17,16 +17,11 @@ header > nav > .navbar-brand {
   width: 75%;
 }
 
-.navbar-nav > li:first-of-type{
-  border-left: 2px solid #ffe2ad;
-}
-
 .navbar-nav > li{
   padding: 0 0.6rem;
   font-weight: 500;
   font-size: 0.9rem;
   color: #feb229;
-  border-right: 2px solid #ffe2ad;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -41,7 +36,7 @@ header > nav > .navbar-brand {
   padding-top: 60px;
 }
 
-.list-group-item {
+#news .list-group-item {
   background-color: transparent;
   font-weight: 500;
   font-size: 0.9rem;
@@ -53,6 +48,10 @@ header > nav > .navbar-brand {
 
 #news h2 {
   color: #ed8606;
+}
+
+#news .list-group{
+  max-height: 60vh;
 }
 
 #principalsWordsModal p{
@@ -102,14 +101,30 @@ footer .nav-link:hover {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .navbar-nav > li:first-of-type{
+    border-left: 2px solid #ffe2ad;
+  }
+  
+  .navbar-nav > li{
+    border-right: 2px solid #ffe2ad;
+  }
+
+  #news .list-group{
+    max-height: 100vh;
+  }
 }
 
 @media (min-width: 992px) { 
-
+  #news .list-group{
+    max-height: 75vh;
+  }
 }
 
 @media (min-width: 1200px) { 
-
+  #news .list-group{
+    max-height: 60vh;
+  }
 }
 
 /**************************************/
