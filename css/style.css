@@ -1,9 +1,9 @@
-header > nav {
+header>nav {
   background-color: #fdefd3;
   border-bottom: 0.25rem solid #ed8606;
 }
 
-header > nav > .navbar-brand {
+header>nav>.navbar-brand {
   width: 30%;
   max-width: 350px;
   min-width: 190px;
@@ -17,7 +17,7 @@ header > nav > .navbar-brand {
   width: 75%;
 }
 
-.navbar-nav > li{
+.navbar-nav>li {
   padding: 0 0.6rem;
   font-weight: 500;
   font-size: 0.9rem;
@@ -50,7 +50,7 @@ header > nav > .navbar-brand {
   color: #ed8606;
 }
 
-#news .list-group{
+#news .list-group {
   max-height: 60vh;
 }
 
@@ -58,7 +58,7 @@ header > nav > .navbar-brand {
   min-height: 350px;
 }
 
-#principalsWordsModal p{
+#principalsWordsModal p {
   font-style: oblique;
 }
 
@@ -76,6 +76,15 @@ header > nav > .navbar-brand {
 
 .color-primary-dark {
   color: #ed8606;
+}
+
+.manager img {
+  max-height: 200px;
+}
+
+.manager-card:hover {
+  background-color: #fdefd3;
+  cursor: pointer;
 }
 
 #footer-top {
@@ -99,46 +108,47 @@ footer .nav-link:hover {
   color: #ffffff;
 }
 
+.row > div[class*='col-'] {
+  display: flex;
+  flex:1 0 auto;
+}
+
 /*************************************************************/
 
-@media (min-width: 576px) { 
-  header > .navbar {
+@media (min-width: 576px) {
+  header>.navbar {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
-@media (min-width: 768px) { 
-  header > .navbar {
+@media (min-width: 768px) {
+  header>.navbar {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  .navbar-nav > li:first-of-type{
+  .navbar-nav>li:first-of-type {
     border-left: 2px solid #ffe2ad;
   }
-  
-  .navbar-nav > li{
+  .navbar-nav>li {
     border-right: 2px solid #ffe2ad;
   }
-
-  #news .list-group{
+  #news .list-group {
     max-height: 100vh;
   }
-
   .content-top {
     margin-top: 125px;
   }
 }
 
-@media (min-width: 992px) { 
-  #news .list-group{
+@media (min-width: 992px) {
+  #news .list-group {
     max-height: 75vh;
   }
 }
 
-@media (min-width: 1200px) { 
-  #news .list-group{
+@media (min-width: 1200px) {
+  #news .list-group {
     max-height: 60vh;
   }
 }
