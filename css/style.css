@@ -70,6 +70,14 @@ header > nav > .navbar-brand {
   padding: 0.25rem;
 }
 
+.gallery img {
+  max-height: 150px;
+}
+
+.color-primary-dark {
+  color: #ed8606;
+}
+
 #footer-top {
   border-top: 0.25rem solid #ed8606;
   background-color: #fdefd3;
@@ -90,8 +98,6 @@ footer .nav-link:hover {
   background-color: #c16e07;
   color: #ffffff;
 }
-
-
 
 /*************************************************************/
 

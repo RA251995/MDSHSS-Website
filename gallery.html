@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Mar Dionysius Seminary Higher Secondary School, Kottayam stands as a luminous figure amongst the educational institutions of Kerala.">
+    <meta name="keywords" content="MDSHSS Kottayam, MD Seminary HSS Kottayam">
+    <meta name="author" content="RA251995">
+    <meta name="theme-color" content="#c16e07">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/mds-logo-favicon.png">
+
+    <title>Gallery | MD Seminary Higher Secondary School Kottayam</title>
+
+    <!-- Bootstrap, Gallery, Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/baguetteBox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- jQuery, Popper Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $(function () {
+            //$("#content").hide();
+            $("#head").load("header.html", function () {
+                $("#menu-gallery").addClass("active");
+                //$("#content").show();
+            });
+            $("#foot").load("footer.html");
+            $("#mod").load("modals.html");
+        });
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <div id="mod"></div>
+
+    <header id="head"></header>
+    <!-- Content -->
+    <main role="main">
+        <div class="container content-top pt-3 pb-5">
+            <h2 class="h4 mt-4 color-primary-dark text-center">A Truly Great Mentors Hard To Find And Impossible To Forget</h2>
+            <div id="img-gallery-retiring-teachers" class="gallery d-flex justify-content-center flex-wrap"></div>
+
+            <h2 class="h4 mt-4 color-primary-dark text-center">PTA</h2>
+            <div id="img-gallery-pta" class="gallery d-flex justify-content-center flex-wrap"></div>
+
+            <h2 class="h4 mt-4 color-primary-dark text-center">Christmas</h2>
+            <div id="img-gallery-christmas" class="gallery d-flex justify-content-center flex-wrap"></div>
+
+            <h2 class="h4 mt-4 color-primary-dark text-center">NCC</h2>
+            <div id="img-gallery-ncc" class="gallery d-flex justify-content-center flex-wrap"></div>
+        </div>
+    </main>
+
+    <footer id="foot" class="footer mt-auto"></footer>
+
+    <script src="js/baguetteBox.js" async></script>
+
+    <script>
+        $(function () {
+            $.getScript("js/baguetteBox.js")
+                .done(function () {
+                    $('#img-gallery-retiring-teachers').empty();
+                    $.getJSON("db/gallery-retiring-teachers.json", function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#img-gallery-retiring-teachers").append("<a href='" + data[i].src + "' data-caption='" + data[i].alt + "'><img class='img-fluid' src='" + data[i].src + "' alt='" + data[i].alt + "' loading=lazy></a>");
+                        }
+                        baguetteBox.run('#img-gallery-retiring-teachers', {
+                            buttons: true
+                        });
+                    });
+
+                    $('#img-gallery-pta').empty();
+                    $.getJSON("db/gallery-pta.json", function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#img-gallery-pta").append("<a href='" + data[i].src + "' data-caption='" + data[i].alt + "'><img class='img-fluid' src='" + data[i].src + "' alt='" + data[i].alt + "' loading=lazy></a>");
+                        }
+                        baguetteBox.run('#img-gallery-pta', {
+                            buttons: true
+                        });
+                    });
+
+                    $('#img-gallery-christmas').empty();
+                    $.getJSON("db/gallery-christmas.json", function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#img-gallery-christmas").append("<a href='" + data[i].src + "' data-caption='" + data[i].alt + "'><img class='img-fluid' src='" + data[i].src + "' alt='" + data[i].alt + "' loading=lazy></a>");
+                        }
+                        baguetteBox.run('#img-gallery-christmas', {
+                            buttons: true
+                        });
+                    });
+
+                    $('#img-gallery-ncc').empty();
+                    $.getJSON("db/gallery-ncc.json", function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $("#img-gallery-ncc").append("<a href='" + data[i].src + "' data-caption='" + data[i].alt + "'><img class='img-fluid' src='" + data[i].src + "' alt='" + data[i].alt + "' loading=lazy></a>");
+                        }
+                        baguetteBox.run('#img-gallery-ncc', {
+                            buttons: true
+                        });
+                    });
+                });
+        });
+    </script>
+
+</html>
