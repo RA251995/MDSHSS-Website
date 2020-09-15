@@ -108,7 +108,7 @@ footer .nav-link:hover {
   color: #ffffff;
 }
 
-.row > div[class*='col-'] {
+.row-managers > div[class*='col-'] {
   display: flex;
   flex:1 0 auto;
 }
