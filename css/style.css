@@ -113,6 +113,10 @@ footer .nav-link:hover {
   flex:1 0 auto;
 }
 
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #fbf3e4
+}
+
 /*************************************************************/
 
 @media (min-width: 576px) {
