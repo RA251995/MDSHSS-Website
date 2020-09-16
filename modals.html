@@ -1,3 +1,68 @@
+<!-- RESULTS Modal -->
+<div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-body mx-2">
+                <h2 class="h4 color-primary-dark m-3 text-center">HIGHER SECONDARY EXAMINATION RESULTS</h2>
+
+                <div class="row justify-content-center">
+                    <div class='col-6 col-md-4 mb-2 text-center'> <img class='img-fluid rounded' src='img/savio.jpg' alt='' lazy>
+                        <div class='text-center p-1'>
+                            <h6 class='m-0 p-0'>Savio Tom</h6>
+                            <p class='p-0 m-0'>1200/1200 in HSS Examination 2014</p>
+                        </div>
+                    </div>
+                    <div class='col-6 col-md-4 mb-2 text-center'> <img class='img-fluid rounded' src='img/deepak.jpg' alt='' lazy>
+                        <div class='text-center p-1'>
+                            <h6 class='m-0 p-0'>Deepak G Anil</h6>
+                            <p class='p-0 m-0'>1200/1200 in HSS Examination 2014</p>
+                        </div>
+                    </div>
+                    <div class='col-6 col-md-4 mb-2 text-center'> <img class='img-fluid rounded' src='img/gokulraj.jpg' alt='' lazy>
+                        <div class='text-center p-1'>
+                            <h6 class='m-0 p-0'>Gokulraj K R</h6>
+                            <p class='p-0 m-0'>1200/1200 in HSS Examination 2015</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="h4 color-primary-dark m-3 text-center">HIGHER SECONDARY EXAMINATION RESULTS 2019</h2>
+                <h3 class="h5 m-3 text-center">36 Students scored A+ in all subjects</h3>
+
+                <div id="row-results-hss" class="row row-results justify-content-center">
+
+                </div>
+
+                <h2 class="h4 color-primary-dark m-3 text-center">SSLC EXAMINATION RESULTS 2019</h2>
+                <h3 class="h5 m-3 text-center">16 Students scored A+ in all subjects</h3>
+
+                <div id="row-results-hs" class="row row-results justify-content-center">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $.getJSON("db/a-plus-hss-2019.json", function (data) {
+            for (var i = 0; i < data.length; i++) {
+                $("#row-results-hss").append("<div class='col-6 col-sm-4 col-md-3 col-lg-2 mb-2 text-center'> <img class='img-fluid rounded' src='img/results/2019/hss/" + data[i].name + ".jpg' alt='' lazy> <div class='text-center p-1'> <h6 class='m-0 p-0'>" + data[i].name + "</h6> <p class='p-0 m-0'>" + data[i].stream + "</p> </div> </div>");
+            }
+        });
+
+        $.getJSON("db/a-plus-hs-2019.json", function (data) {
+            for (var i = 0; i < data.length; i++) {
+                $("#row-results-hs").append("<div class='col-6 col-sm-4 col-md-3 col-lg-2 mb-2 text-center'> <img class='img-fluid rounded' src='img/results/2019/hs/" + data[i].name + ".jpg' alt='' lazy> <div class='text-center p-1'> <h6 class='m-0 p-0'>" + data[i].name + "</h6> </div> </div>");
+            }
+        });
+    });
+</script>
+
 <!-- PRINCIPAL'S WORDS Modal -->
 <div class="modal fade" id="principalsWordsModal" tabindex="-1" aria-labelledby="principalsWordsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
