@@ -166,7 +166,6 @@
                             </div>
                         </section>
 
-
                     </div>
                 </div>
             </div>
@@ -196,14 +195,14 @@
         $(".nav-link").click(function () {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $($(this).attr("href")).offset().top - 150
-            }, 1000);
+            });
         });
 
         // Scroll to top
         $("#scroll-top-btn").click(function () {
             $([document.documentElement, document.body]).animate({
                 scrollTop: 0
-            }, 500);
+            });
         });
 
         // Change Scroll to top button visibility based on current scroll position
