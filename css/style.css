@@ -111,6 +111,10 @@ header>nav>.navbar-brand {
   max-height: 200px;
 }
 
+.patron img {
+  max-height: 300px;
+}
+
 .manager-card:hover {
   background-color: #fdefd3;
   cursor: pointer;
