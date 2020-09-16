@@ -107,12 +107,16 @@ header>nav>.navbar-brand {
   color: #ed8606;
 }
 
-.manager img {
-  max-height: 200px;
-}
-
 .patron img {
   max-height: 300px;
+}
+
+.heads img {
+  max-height: 175px;
+}
+
+.manager img {
+  max-height: 200px;
 }
 
 .manager-card:hover {
