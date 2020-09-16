@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header>nav {
   background-color: #fdefd3;
   border-bottom: 0.25rem solid #ed8606;
@@ -70,6 +74,31 @@ header>nav>.navbar-brand {
   padding: 0.25rem;
 }
 
+.row-managers>div[class*='col-'] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.table-striped>tbody>tr:nth-child(2n+1)>td, .table-striped>tbody>tr:nth-child(2n+1)>th {
+  background-color: #fbf3e4
+}
+
+#accordionActivity .btn-link {
+  color: #000000;
+  font-weight: 500;
+}
+
+#nav-infrastructure .nav-link {
+  color: #000000;
+  font-weight: 500;
+}
+
+#nav-infrastructure .nav-link:hover {
+  color: #ffffff;
+  background-color: #c16e07;
+  border-radius: 0.25rem;
+}
+
 .gallery img {
   max-height: 150px;
 }
@@ -85,6 +114,17 @@ header>nav>.navbar-brand {
 .manager-card:hover {
   background-color: #fdefd3;
   cursor: pointer;
+}
+
+#scroll-top-btn {
+  border: 0px;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  z-index: 99;
+  background-color: #fdefd355;
+  border-radius: 0.5rem;
+  display: none;
 }
 
 #footer-top {
@@ -106,20 +146,6 @@ footer .nav-link:hover {
 #footer-bottom {
   background-color: #c16e07;
   color: #ffffff;
-}
-
-.row-managers > div[class*='col-'] {
-  display: flex;
-  flex:1 0 auto;
-}
-
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-  background-color: #fbf3e4
-}
-
-#accordionActivity .btn-link {
-  color: #000000;
-  font-weight: 500;
 }
 
 /*************************************************************/
